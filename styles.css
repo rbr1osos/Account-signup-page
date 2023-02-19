@@ -28,7 +28,7 @@ body{
     background-image: url(images/miguel-davis-V6K83zGHkUE-unsplash.jpg);
     background-size:cover;
     background-position: center;
-    width:45%;
+    width:60%;
     position:relative;
 }
 
@@ -102,10 +102,21 @@ h2{
 }
 .textbox{ /* makes the labels be above txt box */
     display:flex;
-    font-size: 16px;
-    font-weight: 700;
+    font-size: 12px;
+    font-weight:lighter;
     color:rgb(134, 134, 134);
     flex-direction: column;
+}
+
+input:invalid{
+    border-color:red;
+    height:28px;
+}
+
+input:valid{
+    border-color:rgb(141, 139, 139);
+    border-radius: 4px;
+    height:28px;
 }
 .bottom-info{
     padding-left:8%;
@@ -117,11 +128,13 @@ h2{
     font-size: 16px;
     padding:10px 32px;
     border-radius: 8px;
-    margin:16px 0;
+    margin:32px 0;
     width:200px;
     border-style: none;
 }
-
+label{
+    text-transform: uppercase;
+}
 .create_button:hover{
     background-color: #a73535
 }
@@ -134,4 +147,13 @@ h2{
 .account{ /* account log in */
     color:var(--outside-text);
 }
-/*
+
+.login{
+color:var(--accent-color);
+font-weight: 700;
+margin-left:10px;
+}
+
+.login:hover{
+    color:white;
+}
